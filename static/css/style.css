@@ -1,0 +1,161 @@
+body {
+    background-image: url("../../static/img/unnamed.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+nav ul li a {
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(255, 228, 196);
+    font-weight: bold;
+}
+
+nav {
+    height: 100px;
+    background-color: rgb(47, 47, 47);
+
+}
+
+header {
+    grid-area: header;
+    height: 10px;
+    width: 100%;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    background-color: rgb(47, 47, 47);
+    grid-area: sidebar;
+    height: 1100px;
+
+}
+
+.divka{
+    display: block;
+    background-color: rgb(47, 47, 47);
+    width: 100%;
+    opacity: 90%;
+
+}
+
+.dovn{
+    display: block;
+    background-color: rgb(47, 47, 47);
+    width: 100%;
+    opacity: 90%;
+    margin-left: 40px;
+}
+
+.den{
+    display: block;
+    background-color: rgb(47, 47, 47);
+    width: 50%;
+    opacity: 90%;
+    margin-left: 370px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(47, 47, 47);
+    height: 20px;
+    width: 100%;
+}
+
+.container {
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 120px auto 100px;
+    grid-gap: 10px;
+    display: grid;
+    grid-template-areas:
+
+"header header header header"
+"main main main sidebar"
+"footer footer footer footer";
+}
+
+
+button {
+
+    background-color: rgb(47, 47, 47);
+    opacity: 90%;
+}
+
+a {
+    font-size: 30px;
+    color: rgb(255, 228, 196);
+    font-weight: bold;
+}
+
+
+
+
+#brand {
+    float: left;
+}
+
+#promotional {
+    font-size: 25px;
+    font-weight: 300;
+    color: black
+}
+
+#daily {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+#closed {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+input {
+    background-color: rgb(47, 47, 47);
+}
+
+#govno {
+    margin-left: 420px;
+}
+
+#success {
+    text-align: center;
+    margin-top: 300px;
+    color: white;
+}
+
+#back {
+    margin-left: 290px;
+    margin-top: 40px;
+}
+
+.info {
+    color: white;
+}
+
+#qwe{
+    text-align: center;
+    color: white;
+}
+
+.title{
+    color: #e3af1e;
+}
+
+.name{
+    color: black;
+}
+
+.tt{
+    color: #e3af1e;
+    text-align: center;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <link href="../../static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <nav style="height: 70px" id="main" class="navbar navbar-expand-lg">
+            <a style="float: left;"><img alt="Brand" class="img-responsive" src="../../static/img/brand.png">
+            </a>
+            <a style="font-size: 30px; color: rgb(255, 228, 196); font-weight: bold;" href="index.html" class="nav-link"
+               href="#">
+                TwoPizza</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" , id=xuyeta>
+                    <li class="nav-item active"><a class="nav-link" href="Menu.html"></i>Меню</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="Constructor_Pizza.html">Конструктор</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">Про сайт</a>
+                    </li>
+                    <li class="nav-item active">
+
+                    <a class="nav-link" href="Registration.html">Реєстрація</a>                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form method="post">
+            {% csrf_token %}
+            <br>
+            {{ form.email }}<br>
+            {{ form.password }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-warning" type="submit" id="govno">Зареєструватися</button>
+        </form>
+    </main>
+    <aside>
+        <div>
+            <div style="border: 5px black solid; height: 1100px; width: 300px ">
+                <p style="font-size: 30px;font-weight: bold;"> Піцца дня<br>
+                <hr style="border: 3px black solid;">
+                </p>
+                <button style=" width: 290px;border: 0 transparent solid">
+                    <p style="text-indent: 2px; float: left; width: 100px;">
+                        <img alt="Brand" class="img-responsive"
+                             src="C:\Users\Iskandirov.STEP\Desktop\ПІци\Малі\pizza-con-acciughe_15.png">
+                    </p>
+                    <a href="pizza%20with%20anchous.html" style="font-size: 25px;font-weight: 500; color: black">Піца з
+                        анчоусами</a>
+                    <hr style="width: 200px ;border: 2px black solid;">
+                    <p>Цін2а: 90грн <br> Вага: 400г</p>
+                    <p>Філе анчоуса в олії,<br> Моцарела,<br>
+                        помідори,<br>Цибуля,<br>Пармезан,<br>Каперси,<br>Каперси,<br>гострий
+                        перець,</p>
+                </button>
+                <hr style="border: 3px black solid;">
+                <p style="font-size: 30px;font-weight: bold;"> Акція -33%<br>
+                <hr style="border: 3px black solid;">
+                </p>
+                <button style=" width: 290px; border: 0 transparent solid">
+                    <p style="text-indent: 2px ; float: left; width: 100px;">
+                        <img alt="Brand" class="img-responsive"
+                             src="C:\Users\Iskandirov.STEP\Desktop\ПІци\Малі\Konus.png">
+                    </p>
+                    <a href="Pizza%20in%20conus%20form.html" style="font-size: 25px;font-weight: 500; color: black">
+                        Піца у формі конуса</a>
+
+                    <hr style="width: 200px ;border: 2px black solid;">
+                    <p>Ціна: 100грн <br> Вага: 300г</p>
+                    <p>гриби ,<br> ріпчаста цибуля,<br> шинка ,<br>сир ,<br>болгарський перець ,<br>помідори чері ,<br>зелень
+                        ,<br>томатний соус ,</p>
+                </button>
+                <hr style="border: 3px black solid;">
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <hr style="border: 5px black solid;">
+        <p style="float: left;"><samp style="color: aquamarine">К</samp>онтакти:<br>
+            <samp style="color:  cyan">oleksandr.lomkain2002@gmail.com</samp> <br> <samp style="color: chartreuse">maksimiskandirov2.0@gmail.com</samp>
+            <br> <samp style="color: lightseagreen">matviy2002ut@gmail.com</samp></p>   <!--добавив свою почту-->
+        <p style="text-indent: 20em">доставка:Рівне Дубно Квасилів Житомир Сарни </p>
+        <p style="text-indent: 20em">Ми в соц.мережах g+ f B </p>
+        <p style="text-indent: 5em">Номер телефону: +380156654666 </p>
+    </footer>
+</div>
+</body>

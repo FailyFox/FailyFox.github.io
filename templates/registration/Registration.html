@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <link href="../../static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+    <nav style="height: 70px" id="main" class="navbar navbar-expand-lg">
+        <a style="float: left;"><img alt="Brand" class="img-responsive" src="../../static/img/brand.png">
+        </a>
+        <a style="font-size: 30px; color: rgb(255, 228, 196); font-weight: bold;" href="index.html" class="nav-link"
+           href="#">
+            TwoPizza</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" , id=xuyeta>
+                <li class="nav-item active"><a class="nav-link" href="Menu.html"></i>Меню</a></li>
+                <li class="nav-item active"><a class="nav-link" href="Constructor_Pizza.html">Конструктор</a></li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">Про сайт</a>
+                </li>
+                <li class="nav-item active">
+
+                    <a class="nav-link" href="Registration.html">Реєстрація</a>                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <main>
+        <div class="dovn">
+            <h2 class="tt">Регістрація</h2>
+        <form method="post">
+            {% csrf_token %}
+            <br>
+            {{ form.name }}<br>
+            {{ form.surname }}<br>
+            {{ form.phone }}<br>
+            {{ form.email }}<br>
+            {{ form.password }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-warning" type="submit" id="govno">Зареєструватися</button>
+        </form>
+        </div>
+    </main>
+</div>
+<footer>
+    <hr style="border: 0px black solid;">
+    <pre class="title">Контакти: +38096745568                                     Також можете зєднатися з нами через соц. мережі: @twopizza(Instagram та Facebook)                     Доставка: Львів, Рівне, Київ, Стрий</pre>
+</footer>
+</body>
+</html>
